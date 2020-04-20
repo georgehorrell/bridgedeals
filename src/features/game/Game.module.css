@@ -1,0 +1,60 @@
+/*
+    TABLE:
+        top
+        middle (left play right)
+        bottom
+*/
+
+.table {
+  background-color: #013220;
+  padding: 10px;
+  border-color: rgba(216, 71, 39, 1);
+  border-style: dashed;
+  border-width: 6px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.handRowH {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.handRowV {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.played {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftPlayed {
+    transform: rotate(-90deg);
+}
+
+.rightPlayed {
+    transform: rotate(90deg);
+}
+
+.handLabel {
+  color: aliceblue;
+  padding-bottom: 4px;
+}
+
+.handOrd {
+  color: aliceblue;
+  font-weight: bold;
+  font-size: large;
+  padding-right: 4px;
+}

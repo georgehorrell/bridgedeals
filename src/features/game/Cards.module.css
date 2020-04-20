@@ -1,0 +1,111 @@
+img.card {
+	width: 80px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: initial;
+	box-sizing: initial;
+}
+
+img.card.focus {
+  width: 80px;
+}
+
+img.card.defocus {
+  width: 70px;
+}
+
+img.card.played {
+  width: 100px;
+}
+
+img.card.invisible {
+  opacity: 0%;
+}
+
+img.card.pending {
+  opacity: 40%;
+}
+
+/*
+ * A hand is a div containing cards.
+ */
+.hand {
+	padding: 0;
+	margin: 0;
+}
+.activeHand img.card { 
+	cursor: pointer;
+}
+
+/*
+ * A horizontal hand, class="hand hhand".  The enitire card is visible.
+ */
+.hhand {
+	display: inline-block; 
+}
+.hhand img.card { 
+	padding-top: 10px;
+}
+.hhand.activeHand img.card:hover { 
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+/*
+ * A vertical hand, class="hand vhand".  The enitire card is visible.
+ */
+.vhand {
+	display: block; 
+}
+.vhand img.card { 
+	padding-right: 10px;
+}
+.vhand.activeHand img.card:hover { 
+	padding-right: 0px;
+	padding-left: 10px;
+}
+
+/*
+ * A compact horizontal hand.  Only the last card is entirely visible.
+ */
+.hhandCompact { 
+	display: inline-block; 
+}
+.hhandCompact img.card:first-child { 
+	margin-left: 0px;
+	padding-top: 10px;
+}
+.hhandCompact img.card { 
+	margin-left: -52px;
+	padding-top: 10px;
+}
+.hhandCompact.activeHand img.card:hover { 
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+/*
+ * A compact vertical hand.  Only the last card is entirely visible.
+ */
+.vhandCompact {
+	display: inline-block;
+	vertical-align: top;
+}
+.vhandCompact img.card:first-child { 
+	display: block; 
+	margin-top: 0px;
+	padding-right: 10px;
+}
+.vhandCompact img.card 
+{
+	display: block; 
+	margin-top: -80px;
+	padding-right: 10px;
+}
+.vhandCompact.activeHand img.card:hover,
+.activeHand .vhandCompact img.card:hover { 
+	display: block; 
+	padding-right: 0px;
+	padding-left: 10px;
+}

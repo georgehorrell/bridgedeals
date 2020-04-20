@@ -1,0 +1,14 @@
+.auctionTable {
+  font-size: large;
+  border: 3px;
+  background-color: darkgray;
+}
+
+.auctionTable .active {
+  background-color: lightgrey;
+}
+
+.auctionTable .active:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
